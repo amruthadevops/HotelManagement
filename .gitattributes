@@ -1,5 +1,6 @@
 # Force SQL files to be recognized as SQL
-*.sql linguist-language=SQL
+# Force GitHub to show SQL alongside Python
+*.sql linguist-detectable
 
 # Force .mysql files to be recognized as MySQL
 *.mysql linguist-language=MySQL
