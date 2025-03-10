@@ -1,18 +1,20 @@
-# Force GitHub to recognize SQL files
+# Force SQL files to be recognized as SQL
 *.sql linguist-language=SQL
 
-# Force MySQL-specific files to be detected correctly
+# Force .mysql files to be recognized as MySQL
 *.mysql linguist-language=MySQL
 
-# Include libraries in language statistics (remove default vendor exclusion)
-node_modules/* linguist-vendored=false
-vendor/* linguist-vendored=false
-*.dll linguist-vendored=false
-*.jar linguist-vendored=false
-*.so linguist-vendored=false
+# Force .js files within a specific folder to be JavaScript
+path/to/my/javascript/*.js linguist-language=JavaScript
 
-# Include JSON, YAML, and other configs if necessary
-*.json linguist-vendored=false
-*.yml linguist-vendored=false
-*.yaml linguist-vendored=false
-*.lock linguist-vendored=false
+# Force .py files within a specific folder to be Python
+path/to/my/python/*.py linguist-language=Python
+
+# Force .html files within a specific folder to be HTML
+path/to/my/html/*.html linguist-language=HTML
+
+# Force .css files within a specific folder to be CSS
+path/to/my/css/*.css linguist-language=CSS
+
+# Force .xml files within a specific folder to be XML
+path/to/my/xml/*.xml linguist-language=XML
